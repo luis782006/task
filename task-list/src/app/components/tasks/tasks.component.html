@@ -1,0 +1,8 @@
+<!--Como declaramos la variable de tipo Task(quien es el arreglo) en el componente.ts ya se puede acceder
+Se usa la directiva ngFor para recorrer el arreglo de tareas. Notar que este ngFor es una directiva de angular.
+-->
+<app-tasks-item 
+    *ngFor="let task of tasks" [task]="task" > 
+    (onDeleteTask)="deleteTask(task)"
+</app-tasks-item>
+<!--Esta  [task]="task"  viene del input que declaramos en el ts del componente creado tasks-item-->

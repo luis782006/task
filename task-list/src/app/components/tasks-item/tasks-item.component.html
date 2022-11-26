@@ -1,0 +1,15 @@
+<div class="task">
+
+<h3>{{task.title}} </h3>
+<p>
+    {{task.description}}
+    <fa-icon class="iconClose"
+        [icon]="faTimes"
+        (click)="onDelete(task)"
+    ></fa-icon>
+</p>
+
+<p>{{task.day}}</p>
+
+
+</div>
